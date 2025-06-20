@@ -8,7 +8,112 @@
 </head>
 <body>
   <main>
-    <h1>Cricket Game</h1>
+    <h1>Bat Ball Stump Game</h1>
+    <!-- ******************************************************************************************* -->
+    
+    <button onclick="
+    let ranNum= Math.random()*3; //The computer will generate between 0 and 3
+    let compchoice;
+    //defining value of computer choice
+    if(ranNum>0 && ranNum<1)
+   {
+    compchoice='bat';
+   }
+    else if(ranNum>1 && ranNum<2)
+   {
+    compchoice='ball';
+   }
+    else
+   {
+    compchoice='stump';
+   }
+   //comparing user and computer choice
+    let resultmsg ;
+   if(compchoice==='bat')
+   {
+      resultmsg='Tie';
+   }
+   else if(compchoice==='ball')
+   {
+      resultmsg='User Won';
+   }
+   else
+   {
+      resultmsg='Computer has Won';
+   }
+
+   alert(`You chose bat. Computer chose ${compchoice} and ${resultmsg}`)
+    ">Bat</button>
+
+<!-- **************************************************************************************************************** -->
+    <button onclick="
+     ranNum= Math.random()*3; //The computer will generate between 0 and 3
+     
+    //defining value of computer choice
+    if(ranNum>0 && ranNum<1)
+   {
+    compchoice='bat';
+   }
+    else if(ranNum>1 && ranNum<2)
+   {
+    compchoice='ball';
+   }
+    else
+   {
+    compchoice='stump';
+   }
+   //comparing user and computer choice
+     
+   if(compchoice==='bat')
+   {
+      resultmsg='Computer has Won';
+   }
+   else if(compchoice==='ball')
+   {
+      resultmsg='Its a Tie';
+   }
+   else
+   {
+      resultmsg='User Won';
+   }
+
+   alert(`You chose ball. Computer chose ${compchoice} and ${resultmsg}`)
+    ">Ball</button>
+    <!-- ********************************************************************************************************************** -->
+    <button onclick="
+     ranNum= Math.random()*3; //The computer will generate between 0 and 3
+     
+    //defining value of computer choice
+    if(ranNum>0 && ranNum<1)
+   {
+    compchoice='bat';
+   }
+    else if(ranNum>1 && ranNum<2)
+   {
+    compchoice='ball';
+   }
+    else
+   {
+    compchoice='stump';
+   }
+   //comparing user and computer choice
+    
+   if(compchoice==='bat')
+   {
+      resultmsg='User Won';
+   }
+   else if(compchoice==='ball')
+   {
+      resultmsg='Computer has Won';
+   }
+   else
+   {
+      resultmsg='Its a Tie';
+   }
+
+   alert(`You chose Stupm. Computer chose ${compchoice} and ${resultmsg}`)
+    ">Stump</button>
+   <!-- ******************************************************************************************************** -->
   </main>
   <script src="/script.js"></script>
 </body>
