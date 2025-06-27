@@ -12,21 +12,11 @@
     <!-- ******************************************************************************************* -->
     
     <button onclick="
-    let ranNum= Math.random()*3; //The computer will generate between 0 and 3
-    let compchoice;
+    //The computer will generate between 0 and 3
+    
     //defining value of computer choice
-    if(ranNum>0 && ranNum<1)
-   {
-    compchoice='bat';
-   }
-    else if(ranNum>1 && ranNum<2)
-   {
-    compchoice='ball';
-   }
-    else
-   {
-    compchoice='stump';
-   }
+   
+    generateCompChoice();
    //comparing user and computer choice
     let resultmsg ;
    if(compchoice==='bat')
@@ -47,21 +37,11 @@
 
 <!-- **************************************************************************************************************** -->
     <button onclick="
-     ranNum= Math.random()*3; //The computer will generate between 0 and 3
+      //The computer will generate between 0 and 3
      
     //defining value of computer choice
-    if(ranNum>0 && ranNum<1)
-   {
-    compchoice='bat';
-   }
-    else if(ranNum>1 && ranNum<2)
-   {
-    compchoice='ball';
-   }
-    else
-   {
-    compchoice='stump';
-   }
+       generateCompChoice();
+
    //comparing user and computer choice
      
    if(compchoice==='bat')
@@ -81,21 +61,11 @@
     ">Ball</button>
     <!-- ********************************************************************************************************************** -->
     <button onclick="
-     ranNum= Math.random()*3; //The computer will generate between 0 and 3
+      //The computer will generate between 0 and 3
      
     //defining value of computer choice
-    if(ranNum>0 && ranNum<1)
-   {
-    compchoice='bat';
-   }
-    else if(ranNum>1 && ranNum<2)
-   {
-    compchoice='ball';
-   }
-    else
-   {
-    compchoice='stump';
-   }
+      generateCompChoice();
+
    //comparing user and computer choice
     
    if(compchoice==='bat')
@@ -115,6 +85,24 @@
     ">Stump</button>
    <!-- ******************************************************************************************************** -->
   </main>
-  <script src="/script.js"></script>
+  <script >
+   let compchoice;
+   function generateCompChoice()
+   {
+   let ranNum= Math.random()*3;
+   if(ranNum>0 && ranNum<1)
+   {
+    compchoice='bat';
+   }
+    else if(ranNum>1 && ranNum<2)
+   {
+    compchoice='ball';
+   }
+    else
+   {
+    compchoice='stump';
+   } 
+   }
+  </script>
 </body>
 </html>
